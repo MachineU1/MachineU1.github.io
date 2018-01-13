@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>MachineUI</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo"><strong>MachineUI</strong> by Henri and Owen</a>
+					<nav id="nav">
+						<a href="index.html">Home</a>
+						<a href="evaluate.html">Evaluate</a>
+						<a href="about.html">About</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		<!-- Three -->
+			<section id="three" class="wrapper">
+				<div class="inner">
+					<header class="align-center">
+						<h2><strong>Evaluate</strong></h2>
+					</header>
+
+					<p>In this paragraph, I explain what the input fields are and how to use the machine</p>
+                    
+                <!-- Attribute Form -->
+                    <form action="./compute.php" method="POST">
+                        Age:
+                        <input type="text" name="age" value="0"><br>
+                        
+                        Gender:
+                        <select name="sex">
+                            <option value="1">Male</option>
+                            <option value="0">Female</option>
+                        </select><br>
+                        
+                        Chest Pain Type:<br>
+                        <select name="cp">
+                            <option value="1">Typical Angina</option>
+                            <option value="2">Atypical Angina</option>
+                            <option value="3">Non-Anginal Pain</option>
+                            <option value="4">Asymptomatic</option>
+                        </select><br>
+                        
+                        Resting Blood Pressure(mm Hg):
+                        <input type="text" name="trestbps" value="0"><br>
+                        
+                        Serum Cholestoral(mg/dl):
+                        <input type="text" name="chol" value="0"><br>
+                        
+                        Fasting Blood Sugar(mg/dl) > 120?:
+                        <select name="fbs">
+                            <option value="1">FBS &gt 120 mg/dl</option>
+                            <option value="0">FBS &lt= 120mg/dl</option>
+                        </select><br>
+                        
+                        Resting Electrocardiographic Results:<br>
+                        <select name="restecg">
+                            <option value="0">Normal</option>
+                            <option value="1">Having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV)</option>
+                            <option value="2">Showing probable or definite left ventricular hypertrophy by Estes' criteria</option>
+                        </select><br>
+                        
+                        Maximum Heart Rate Achieved:<br>
+                        <input type="text" name="thalach" value="0"><br>
+                        
+                        Exercise Induced Angina?:<br>
+                        <select name="exang">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select><br>
+                        
+                        ST depression induced by exercise relative to rest?:<br>
+                        <select name="oldpeak">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select><br>
+                        
+                        The slope of the peak exercise ST segment:<br>
+                        <select name="slope">
+                            <option value="1">Upsloping</option>
+                            <option value="2">Flat</option>
+                            <option value="3">Downsloping</option>
+                        </select><br>
+                        
+                        Number of major vessels colored by flourosopy:<br>
+                        <select name="ca">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select><br>
+                        
+                        Thal:<br>
+                        <select name="thal">
+                            <option value="3">Normal</option>
+                            <option value="6">Fixed defect</option>
+                            <option value="7">Reversable defect</option>
+                        </select><br>
+                        
+                        
+
+                        <input type="submit">
+                    </form>
+                </div>  
+			</section>
+        
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+
+					<a href="mailto:henripru99@gmail.com" class = "button alt">Get in Touch</a>
+                    <p></p>
+					<div class="copyright">
+						&copy; MachineUI. Design: <a href="https://templated.co">TEMPLATED</a>
+					</div>
+
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
