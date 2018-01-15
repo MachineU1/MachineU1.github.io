@@ -1,4 +1,6 @@
-function returnFormThing(form)
-{
-  alert(form.age.value);
+document.forms["computeform"].onsubmit = function(){
+    var c = document.getElementById("age").value;
+    var f = c+10;
+    alert(f);
+    return false;
 }
