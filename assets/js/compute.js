@@ -1,4 +1,4 @@
-document.forms["computeform"].onsubmit = function(){
+function computeform(){
     var c = document.getElementById("age").value;
     var f = c+10;
     alert(f);
