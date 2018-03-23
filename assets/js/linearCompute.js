@@ -28,6 +28,6 @@ function computeform(){
 					    	  document.getElementById("thal").value*matrix[13][12];
 					var ans = (4) * (sum - 3) / (13.2 - 3);
 					var ans2 = ans/4.0*100.0;
-					alert("Using the linear regression model, this patient has a " + ans2.toFixed(2) + "% chance of having heart disease");
+					alert("Using the linear regression model, this patient has a " + ans2.toFixed(2) + "% chance of having heart disease\n" + "The prediction value was: " + ans.toFixed(2));
 					return ans;
 }
