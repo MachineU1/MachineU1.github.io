@@ -27,6 +27,7 @@ function computeform(){
 					    	  document.getElementById("ca").value*matrix[13][11] +
 					    	  document.getElementById("thal").value*matrix[13][12];
 					var ans = (4) * (sum - 3) / (13.2 - 3);
-					alert(ans);
+					var ans2 = ans/4.0;
+					alert("Using the linear regression model, this patient has a " + ans2.toFixed(2) + "% chance of having heart disease");
 					return ans;
 }
