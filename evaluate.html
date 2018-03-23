@@ -35,16 +35,16 @@
 			
                     <form>
                         Age:
-                        <input type="text" name="age" value="0"><br>
+                        <input type="text" name="age" id="age" value="0"><br>
                         
                         Gender:
-                        <select name="sex">
+                        <select name="sex" id="sex">
                             <option value="1">Male</option>
                             <option value="0">Female</option>
                         </select><br>
                         
                         Chest Pain Type:<br>
-                        <select name="cp">
+                        <select name="cp" id="cp">
                             <option value="1">Typical Angina</option>
                             <option value="2">Atypical Angina</option>
                             <option value="3">Non-Anginal Pain</option>
@@ -52,48 +52,48 @@
                         </select><br>
                         
                         Resting Blood Pressure(mm Hg):
-                        <input type="text" name="trestbps" value="0"><br>
+                        <input type="text" name="trestbps" id="trestbps" value="0"><br>
                         
                         Serum Cholestoral(mg/dl):
-                        <input type="text" name="chol" value="0"><br>
+                        <input type="text" name="chol" id="chol" value="0"><br>
                         
                         Fasting Blood Sugar(mg/dl) > 120?:
-                        <select name="fbs">
+                        <select name="fbs" id="fbs">
                             <option value="1">FBS &gt 120 mg/dl</option>
                             <option value="0">FBS &lt= 120mg/dl</option>
                         </select><br>
                         
                         Resting Electrocardiographic Results:<br>
-                        <select name="restecg">
+                        <select name="restecg" id="restecg">
                             <option value="0">Normal</option>
                             <option value="1">Having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV)</option>
                             <option value="2">Showing probable or definite left ventricular hypertrophy by Estes' criteria</option>
                         </select><br>
                         
                         Maximum Heart Rate Achieved:<br>
-                        <input type="text" name="thalach" value="0"><br>
+                        <input type="text" name="thalach" id="thalach" value="0"><br>
                         
                         Exercise Induced Angina?:<br>
-                        <select name="exang">
+                        <select name="exang" id="exang">
                             <option value="1">Yes</option>
                             <option value="0">No</option>
                         </select><br>
                         
                         ST depression induced by exercise relative to rest?:<br>
-                        <select name="oldpeak">
+                        <select name="oldpeak" id="oldpeak">
                             <option value="1">Yes</option>
                             <option value="0">No</option>
                         </select><br>
                         
                         The slope of the peak exercise ST segment:<br>
-                        <select name="slope">
+                        <select name="slope" id="slope">
                             <option value="1">Upsloping</option>
                             <option value="2">Flat</option>
                             <option value="3">Downsloping</option>
                         </select><br>
                         
                         Number of major vessels colored by flourosopy:<br>
-                        <select name="ca">
+                        <select name="ca" id="ca">
                             <option value="0">0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -101,13 +101,13 @@
                         </select><br>
                         
                         Thal:<br>
-                        <select name="thal">
+                        <select name="thal" id="thal">
                             <option value="3">Normal</option>
                             <option value="6">Fixed defect</option>
                             <option value="7">Reversable defect</option>
                         </select><br>
                         
-                        <input type="submit" id = "submit" onClick = "computeform()">
+                        <input type="submit" id = "submit" onclick = "computeform()">
                     </form>
                 </div>  
 			</section>
